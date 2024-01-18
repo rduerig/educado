@@ -36,6 +36,14 @@ class Fish(Animal):
         print(self.name + " schwimmt im Kreis und macht " + self.sound)
 
 
+class Bird(Animal):
+
+    sound = "Piep!"
+
+    def move(self):
+        print(self.name + " fliegt davon und macht " + self.sound)
+
+
 d = Dog("Fifi")
 d.speak()
 d.move()
@@ -47,6 +55,10 @@ c.move()
 f = Fish("Nemo")
 f.speak()
 f.move()
+
+b = Bird("Tweetie")
+b.speak()
+b.move()
 
 c2 = Cat("Mimi")
 c2.speak()
